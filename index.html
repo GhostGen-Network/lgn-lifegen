@@ -1,1 +1,205 @@
-save
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeGen Season 1</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #1d1d1d, #333);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden;
+        }
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(30, 30, 30, 0.8);
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
+            width: 50px;
+            margin-right: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        main {
+            padding: 80px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(30, 30, 30, 0.9);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .card:hover {
+            background-color: rgba(50, 50, 50, 0.9);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .features ul, .join ol {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li, .join li, .description-text {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: rgba(50, 50, 50, 0.8);
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .description-text {
+            list-style-type: none;
+            text-align: center;
+        }
+        .features li:hover, .join li:hover, .description-text:hover {
+            background-color: rgba(70, 70, 70, 0.8);
+        }
+        footer {
+            padding: 20px;
+            background-color: rgba(30, 30, 30, 0.8);
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .community-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .community-card {
+            flex: 1;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(30, 30, 30, 0.9);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .community-card:hover {
+            background-color: rgba(50, 50, 50, 0.9);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+        .community-card img {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .community-card button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .community-card button:hover {
+            background-color: #004494;
+        }
+        .community-card .green-button {
+            background-color: #28a745;
+        }
+        .community-card .green-button:hover {
+            background-color: #218838;
+        }
+        .divider {
+            grid-column: span 3;
+            height: 2px;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="lifegen.png" alt="Server Logo">
+            LifeGen Season 1
+        </h1>
+    </header>
+    <main>
+        <div class="card description">
+            <h2>Welcome to LifeGen Season 1!</h2>
+            <ul>
+                <li class="description-text">This is a SkyGen/SMP realm on Bedrock Minecraft. Join us for an exciting adventure and build your empire!</li>
+            </ul>
+        </div>
+        <div class="card features">
+            <h2>Features</h2>
+            <ul>
+                <li>Unique SkyGen experience</li>
+                <li>Survival Multiplayer (SMP) elements</li>
+                <li>Friendly community</li>
+                <li>Regular events and updates</li>
+            </ul>
+        </div>
+        <div class="card join">
+            <h2>How to Join</h2>
+            <p>To join the LifeGen Season 1 realm, simply follow these steps:</p>
+            <ol>
+                <li>Open Minecraft Bedrock Edition</li>
+                <li>Navigate to the 'Friends' tab</li>
+                <li>Click on 'Join Realm'</li>
+                <li>Enter the invite code: <strong>gr2cg9HwPYA</strong></li>
+            </ol>
+        </div>
+        <div class="divider"></div>
+        <div class="community-section">
+            <div class="community-card">
+                <h2>Join Our Community</h2>
+                <button onclick="window.open('https://discord.gg/TPkCPAyNpx', '_blank')">
+                    <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord Logo">
+                    Join us on Discord
+                </button>
+            </div>
+            <div class="community-card">
+                <h2>Join Our Realm</h2>
+                <button class="green-button" onclick="window.open('https://open.minecraft.net/pocket/realms/invite/gr2cg9HwPYA', '_blank')">
+                    <img src="https://static.wikia.nocookie.net/minecraft/images/f/fe/GrassNew.png/revision/latest/scale-to-width/360?cb=20190903234415" alt="Minecraft Logo">
+                    Join Now
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 LifeGen. All rights reserved.</p>
+    </footer>
+</body>
+</html>
